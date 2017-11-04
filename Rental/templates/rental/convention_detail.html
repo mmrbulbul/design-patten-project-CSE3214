@@ -1,0 +1,39 @@
+{% extends 'detailTemplate.html'  %}
+
+
+{% block iteratorblock %}
+   
+  {% for id in ids %}
+      <h4><b> Name : </b> {{id.name}}</h4>
+      <h4><b> Location : </b> {{id.location}}</h4>
+      <h4><b> Rent : </b> {{id.rent}} Tk</h4>
+       <h4><b> Rent : </b> {{id.advance}} Tk</h4>
+      <h4><b> Contact Number  :  {{id.contact}}</h4> </b>
+      <h4><b> Details : </b> {{id.details}}</h4>      
+      
+      <h4><b> Parking Space : </b> {{id.parking_space}}</h4>
+      <h4><b> Size of Floor : </b> {{id.size_of_floor}}</h4>
+      <h4><b> Number of floors : </b> {{id.no_of_floor}}</h4>
+      <h4><b> Human Capacity : </b> {{id.human_capacity}}</h4>
+     
+      {% if id.catering_system %}
+      <h4><b> Catering Syatem: </b> Yes</h4>
+      {% else %}
+      <h4><b> Catering Syatem: </b> No</h4>
+      {% endif %}
+
+      {% if id.open_space %}
+      <h4><b> Open Space: </b> Yes</h4>
+      {% else %}
+      <h4><b> Open Space: </b> No</h4>
+      {% endif %}
+      
+      
+      
+      
+      <h4><b> Availble from : </b> {{id.available_from}}</h4>
+      <h4 ><b> Deadline :  {{id.available_upto}}</h4> </b>
+  {% endfor %}
+
+
+  {% endblock %}

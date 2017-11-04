@@ -1,0 +1,56 @@
+{% extends 'detailTemplate.html'  %}
+
+
+{% block iteratorblock %}
+   
+  {% for id in ids %}
+
+      <h4><b> Location : </b> {{id.location}}</h4>
+ 
+      <h4><b> Rent : </b> {{id.rent}} Tk</h4>
+       <h4><b> Advance : </b> {{id.advance}} Tk</h4>
+      <h4><b> Contact Number  :  {{id.contact}}</h4> </b>
+      <h4><b> Details : </b> {{id.details}}</h4>
+
+       <h4><b> No of Roommate : </b> {{id.total_roommate}}</h4>
+      <h4><b> Available Roommate : </b> {{id.available_roommate}}</h4>
+       {% if id.family %}
+      <h4><b> Family : </b> Yes</h4>
+      {% else %}
+      <h4><b> Family: </b> No</h4>
+      {% endif %}
+      
+
+      {% if id.bed %}
+      <h4><b> Bed: </b> Yes</h4>
+      {% else %}
+      <h4><b> Bed: </b> No</h4>
+      {% endif %}
+
+
+      {% if id.table %}
+      <h4><b> Table: </b> Yes</h4>
+      {% else %}
+      <h4><b> Table: </b> No</h4>
+      {% endif %}
+
+      {% if id.chair %}
+      <h4><b> Chair: </b> Yes</h4>
+      {% else %}
+      <h4><b> Chair: </b> No</h4>
+      {% endif %}
+
+       {% if id.water_purifier %}
+      <h4><b> Water Purifier: </b> Yes</h4>
+      {% else %}
+      <h4><b> Water Purifier: </b> No</h4>
+      {% endif %}
+
+
+      <h4><b> Availble from : </b> {{id.available_from}}</h4>
+      <h4 ><b> Deadline :  {{id.available_upto}}</h4> </b>
+
+  {% endfor %}
+
+
+  {% endblock %}

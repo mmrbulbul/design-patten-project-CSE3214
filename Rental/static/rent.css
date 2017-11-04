@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+#pg-view{
+	height: 85vh;
+	
+}
+#up-row{
+	height:35vh;
+}
+#low-row{
+	height:35vh;
+}
+#apartment{
+	background-color: yellowgreen;
+	height: 35vh;
+}
+#mess{
+	background-color: violet;
+	height: 35vh;
+}
+#sublet{
+	background-color: thistle;
+	height: 35vh;
+}
+#garage{
+	height: 35vh;
+	background-color: teal;
+}
+#convention{
+	height: 35vh;
+	background-color:silver;
+}
+#off-space{
+	height: 35vh;
+	background-color:oldlace;
+}
+.title{
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	font-size-adjust: auto;
+	text-align: center;
+	text-decoration: none;
+	text-decoration-style: wavy;
+}
+
+
+

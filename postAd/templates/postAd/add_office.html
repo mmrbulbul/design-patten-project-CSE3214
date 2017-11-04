@@ -1,0 +1,38 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
+{% block bodyblock %}
+
+<div class="container" id="foo">
+	<!-- <h2> Type here </h2>
+	<form method="post">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button class=" btn btn-success"> Submit </button>
+	</form> -->
+	<div class="row">
+	<h3>Type here ..</h3>
+	  {% csrf_token %}
+	  {% crispy form %}
+
+	  </div>
+
+	  
+</div>
+
+
+
+<style type="text/css">
+	
+	#foo{
+		margin: 0 auto;
+		width: 500px;
+        background-color: white;
+	}
+	#id_details{
+		width: 500px;
+		height: 200px;
+	}
+</style>
+
+{% endblock %}

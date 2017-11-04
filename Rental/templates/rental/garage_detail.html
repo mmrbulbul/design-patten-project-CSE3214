@@ -1,0 +1,18 @@
+{% extends 'detailTemplate.html'  %}
+
+
+{% block iteratorblock %}
+   
+  {% for id in ids %}
+
+      <h4><b> Location : </b> {{id.location}}</h4>
+      <h4><b> Rent : </b> {{id.rent}} Tk</h4>
+      <h4><b> Advance : </b> {{id.advance}} Tk</h4>
+      <h4><b> Contact Number  :  {{id.contact}}</h4> </b>
+      <h4><b> Details : </b> {{id.details}}</h4>
+      <h4><b> Availble from : </b> {{id.available_from}}</h4>
+      <h4 ><b> Deadline :  {{id.available_upto}}</h4> </b>
+  {% endfor %}
+
+
+  {% endblock %}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+#pg-view{
+	height:auto;
+}
+#criteria-bar{
+	height: 100vh;
+	background-color:rgb(226, 226, 207);
+}
+#result-bar{
+	height: auto;
+	
+}
+.result{
+	height: 15vh;
+}
+.odd{
+	background-color:rgb(242, 242, 242);
+}
+.even{
+	background-color: white;
+	margin-top:10px;
+	
+}
+#page-no{
+	align-items: center;
+}
+#block{
+	color: inherit;
+}

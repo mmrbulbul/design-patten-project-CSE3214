@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+{% load staticfiles %}
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Rent For Life</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'w3.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'font-awesome.min.css' %}"/>
+<!-- <link href="apt.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="Home/w3.css">
+<link rel="stylesheet" href="Home/css">
+<link rel="stylesheet" href="Home/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+
+ <div id="foo"> 
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding" style="padding-top: 20px;">
+  <a href="#">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Home/apartments.jpg" alt="Apartments" style="width: 100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Apartments</b></p>
+      </div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Home/hostel.jpg" alt="Hostels" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Hostels</b></p>
+      </div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Home/mess.jpg" alt="Sublets" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Sublets</b></p>
+      </div>
+    </div>
+  </a>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+  <a href="#">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Home/garage.jpg" alt="Garage" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Garage</b></p>
+      </div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Home/convention.jpg" alt="Convention Center" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Convention Center</b></p>
+      </div>
+    </div>
+  </a>
+  <a href="#">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="Home/offiece.jpg" alt="Offiece" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Offiece</b></p>
+      </div>
+    </div>
+  </a>
+</div>
+<style type="text/css">
+  #foo{
+          margin: 0 auto;
+          width: 900px;
+          background-color: white;
+        }
+        body{
+          padding: 0 20px;
+          background-color: white;
+        }
+        html, body{
+          margin: 0;
+          border: 0;
+          width: 100%;
+        }
+</style>
+{% endblock %}

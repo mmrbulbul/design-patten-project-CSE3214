@@ -1,0 +1,52 @@
+{%extends 'viewTemplate.html'%}
+{% block iteratorblock %}
+
+ 
+<div class="col-lg-14" id="result-bar">
+  <div class="col-lg-10" id="heading">
+    <h1> Results for Garage </h1>
+  </div>
+ 
+  {% if ads %}
+      {% for ad in ads %}
+     
+          <a href="{{ad.id}}/" id="block">
+          <div class="col-lg-10 result even">
+          <h4> <b> Location :  {{ad.location}} </h4>
+          
+          <h5><b> Monthly Rent :</b> {{ad.rent}}  </h5>
+           <h4><b> Availble from : </b> {{ad.available_from}}</h4>
+          </div>
+          </a>
+          
+        
+      {% endfor %}
+    {% endif %} 
+  </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

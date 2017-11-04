@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block bodyblock %}
+
+    <!-- Bootstrap core CSS -->
+    <link href="post-ads/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./Carousel Template for Bootstrap_files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./Carousel Template for Bootstrap_files/ie-emulation-modes-warning.js.download"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+  </head>
+
+  <div id="foo">
+    <h2>Post Your Ads Here..</h2>
+      <div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="{{STATIC_URL}}image/apartments.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Apartments</h2>
+          <p><a class="btn btn-default" href="/post-ad/apartment/" role="button">Post-Ad »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="post-ads/hostels.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Hostels</h2>
+          <p><a class="btn btn-default" href="/post-ad/hostel/" role="button">Post-Ad »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    <div>
+      <div class="col-lg-4">
+          <img class="img-circle" src="post-ads/mess.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Sublet</h2>
+          <p><a class="btn btn-default" href="/post-ad/sublet/" role="button">Post-Ad »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="post-ads/garage.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Garage</h2>
+          <p><a class="btn btn-default" href="/post-ad/garage/" role="button">Post-Ad »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    <div>
+      <div class="col-lg-4">
+          <img class="img-circle" src="post-ad/convention.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Convention Centre</h2>
+          <p><a class="btn btn-default" href="/post-ad/convention-centre/" role="button">Post-Ad »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="post-ad/offiece.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2 style="align: center">Office</h2>
+          <p><a class="btn btn-default" href="/post-ad/office/" role="button">Post-Ad »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+      <style type="text/css">
+        #foo{
+          margin: 0 auto;
+          width: 700px;
+        }
+        body{
+          padding: 0 20px;
+        }
+        html, body{
+          margin: 0;
+          border: 0;
+          width: 100%;
+        }
+      </style>
+
+
+      </body>
+{% endblock %}

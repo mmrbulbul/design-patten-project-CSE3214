@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+#pg-view{
+	height: 85vh;
+	
+}
+#up-row{
+	height:35vh;
+}
+#low-row{
+	height:35vh;
+}
+#apartment{
+	background-color: rgb(175, 191, 255);
+        color: white;
+	height: 35vh;
+}
+#mess{
+	background-color: rgb(100, 99, 95);
+	color: white;
+	height: 35vh;
+}
+#sublet{
+	background-color: rgb(255, 230, 0);
+	color: white;
+	height: 35vh;
+}
+#garage{
+	height: 35vh;
+	color: white;
+	background-color: rgb(54, 190, 115);
+}
+#convention{
+	height: 35vh;
+	color: white;
+	background-color:rgb(255, 90, 78);
+}
+#off-space{
+	height: 35vh;
+	color: white;
+	background-color:rgb(124, 166, 255);
+}
+.title{
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+	font-size-adjust: auto;
+	text-align: center;
+	text-decoration: none;
+	text-decoration-style: wavy;
+	
+}
+div#result-bar div:nth-child(even) {
+	background: #FFB;}
+div#result-bar div:nth-child(odd) {
+	background: #CCB;}
+
+

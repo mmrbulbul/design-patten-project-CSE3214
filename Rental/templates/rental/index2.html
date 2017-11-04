@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--{% load staticfiles %}-->
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css' %}"/> 
+<link rel="stylesheet" type="text/css" href="{% static 'rent.css' %}"/> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rent Your Life</title>
+
+	 
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> 
+
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#">RENT</a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/postAd/"><button type="submit" class="btn btn-default-small">Post Ad</button></a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="container-fluid" id="pg-view">
+	<div class="row" id="up-row">
+		<div class="col-lg-2">
+			
+		</div>
+		<div class="col-lg-8" id="up-center">
+			<a href="/apartment/"><div class="col-lg-4" id="apartment">
+				<h2 class="title">APARTMENT</h2>
+			</div></a>
+			<a href="/hostel/"><div class="col-lg-4" id="mess">
+				<h2 class="title">MESS</h2>
+			</div></a>
+			<a href="/sublet/"><div class="col-lg-4" id="sublet">
+				<h2 class="title">SUBLET</h2>
+			</div></a>
+		</div>
+		<div class="col-lg-2">
+			
+		</div>
+	</div>
+	<div class="row" id="low-row">
+		<div class="col-lg-2">
+			
+		</div>
+		<div class="col-lg-8" id="low-center">
+			<a href="/garage/"><div class="col-lg-4" id="garage">
+				<h2 class="title">GARAGE</h2>
+			</div></a>
+			<a href="/convention-centre/"><div class="col-lg-4" id="convention">
+				<h2 class="title">CONVENTION CENTRE</h2>
+			</div></a>
+			<a href="/office-space/"><div class="col-lg-4" id="off-space">
+				<h2 class="title">OFFICE SPACE</h2>
+			</div></a>
+		</div>
+		<div class="col-lg-2">
+			
+		</div>
+	</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+</body>
+</html>

@@ -1,0 +1,55 @@
+{% extends 'detailTemplate.html'  %}
+
+
+{% block iteratorblock %}
+   <h2> Ad details.. </h2> </br>
+  {% for id in ids %}
+
+      <h4><b> Location : </b> {{id.location}}</h4>
+      <h4><b> Size of house : </b> {{id.size}} sq. feet </h4>
+      <h4><b> Rent : </b> {{id.rent}} Tk</h4>
+      <h4><b> Advance Amount : </b> {{id.advance}} Tk</h4>
+      <h4><b> Contact Number  :  {{id.contact}}</h4> </b>
+      <h4><b> Details : </b> {{id.details}}</h4>
+      <h4><b> No of Bed : </b> {{id.no_of_bed}} </h4>
+      <h4><b> No of bath : </b> {{id.no_of_bath}}</h4>
+      {% if id.lift %}
+      <h4><b> Lift: </b> Yes</h4>
+      {% else %}
+      <h4><b> Lift: </b> No</h4>
+      {% endif %}
+
+      {% if id.cctv %}
+      <h4><b> CCTV: </b> Yes</h4>
+      {% else %}
+      <h4><b> CCTV: </b> No</h4>
+      {% endif %}
+
+      {% if id.generator %}
+      <h4><b> Generator: </b> Yes</h4>
+      {% else %}
+      <h4><b> Generator: </b> No</h4>
+      {% endif %}
+
+      {% if id.balcony %}
+      <h4><b> Balcony: </b> Yes</h4>
+      {% else %}
+      <h4><b> Balcony: </b> No</h4>
+      {% endif %}
+
+       {% if id.parking_space %}
+      <h4><b> Parking Space : </b> Yes</h4>
+      {% else %}
+      <h4><b> Parking Space: </b> No</h4>
+      {% endif %}
+      
+      
+      
+      <h4><b> Service Charge : </b> {{id.no_of_bed}} </h4>
+      
+      <h4><b> Availble from : </b> {{id.available_from}}</h4>
+      <h4 ><b> Deadline :  {{id.available_upto}}</h4> </b>
+  {% endfor %}
+
+
+  {% endblock %}
